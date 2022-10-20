@@ -2,44 +2,23 @@
 
 ---
 
-<section class="introduction">
-        <video autoplay muted loop poster="assets/poster.jpg"  id="myVideo">
-            <source src="assets/temp-bg-video.mp4" type="video/mp4">
-        </video>
-    <div class="absolute bottom-1/4 md:right-16 px-5 mx-10 space-y-4 md:backdrop-blur-lg py-8">
-        <h2 class="text-2xl lg:text-4xl">Hello,</h2>
-        <h1 class="text-3xl lg:text-4xl">My name is <span class="font-semibold">VARSHA B REDDY</span>,</h1>
-        <h3 class="text-2xl lg:text-4xl">& I'm an ally to my users.</h3>
+<div class="introduction h-screen w-full">
+    <video autoplay preload='auto' muted loop poster="/assets/poster.jpg" class="blur-sm"  id="myVideo">
+        <source src="assets/temp-bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="relative top-1/4 md:right-auto px-4 text-center md:text-end mx-4 space-y-2  md:space-y-4 py-8">
+        <h2 class="text-3xl lg:text-5xl">Hello, My name is</h2>
+        <h1 class="text-4xl lg:text-6xl font-semibold">VARSHA B REDDY</h1>
+        <h3 class="text-3xl lg:text-5xl">& I'm an ally to my users.</h3>
     </div>
-</section>
+</div>
 
 <style>
     video {
-        position: fixed;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
         z-index: -1;
-    }
-
-    @media (min-aspect-ratio: 16/9) {
-        video {
-            width:100%;
-            height: auto;
-        }
-    }
-
-    @media (max-aspect-ratio: 16/9) {
-        video { 
-            width:auto;
-            height: 100%;
-        }
-    }
-
-    @media (max-width: 767px) {
-        video {
-            display: none;
-        }
-        #introduction {
-            background: url('poster.jpg');
-            background-size: cover;
-        }
     }
 </style>
