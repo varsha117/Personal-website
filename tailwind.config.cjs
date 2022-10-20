@@ -7,7 +7,11 @@ module.exports = {
 			colors: {
 				primary: '#fefbfb',
 				secondary: '#141414'
-			}
+			},
+			screens: {
+				'3xl': '1920px',
+				// => @media (min-width: 1920px) { ... }
+			},
 		},
 	},
 	plugins: [],
