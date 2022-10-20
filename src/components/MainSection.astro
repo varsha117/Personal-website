@@ -1,0 +1,45 @@
+---
+
+---
+
+<section class="introduction">
+        <video autoplay muted loop poster="assets/poster.jpg"  id="myVideo">
+            <source src="assets/temp-bg-video.mp4" type="video/mp4">
+        </video>
+    <div class="flex flex-wrap fixed bottom-80 md:left-2/3 px-10 space-y-4 backdrop-blur-md py-8">
+        <h2 class="text-2xl lg:text-4xl">Hello,</h2>
+        <h1 class="text-3xl lg:text-4xl">My name is <span class="font-semibold">VARSHA B REDDY</span>,</h1>
+        <h3 class="text-2xl lg:text-4xl">& I'm an ally to my users.</h3>
+    </div>
+</section>
+
+<style>
+    video {
+        position: fixed;
+        z-index: -1;
+    }
+
+    @media (min-aspect-ratio: 16/9) {
+        video {
+            width:100%;
+            height: auto;
+        }
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+        video { 
+            width:auto;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        video {
+            display: none;
+        }
+        #introduction {
+            background: url('../../public/assets/poster.jpg');
+            background-size: cover;
+        }
+    }
+</style>
