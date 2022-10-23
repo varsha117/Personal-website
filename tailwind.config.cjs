@@ -6,7 +6,9 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: '#fefbfb',
-				secondary: '#141414'
+				secondary: '#141414',
+				pinkBlock: '#F9F2F2',
+				blueBlock: '#F6FFFE',
 			},
 			screens: {
 				'3xl': '1920px',
