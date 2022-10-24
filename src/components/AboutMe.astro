@@ -1,0 +1,44 @@
+---
+import DetailBlock from "./DetailBlock.astro";
+import Image from "./Image.astro";
+
+---
+
+<div class="about-me h-screen w-full">
+    <div class="relative bg-secondary min-h-[20%] md:min-h-[25%]">
+        <div class="absolute rounded-full -bottom-1/3 md:-bottom-20 left-10 md:left-20 w-32 md:w-40 h-32 md:h-40 bg-[url('/assets/temp-1.jpg')] bg-no-repeat bg-contain shadow-md hover:shadow-xl ease-in duration-500 hover:scale-110"></div>
+    </div>
+    <div class="relative px-2 md:px-8 text-start mx-12 space-y-2 md:space-y-4 py-16 md:py-24">
+        <!-- <p class="text-2xl lg:text-3xl 3xl:text-4xl">Hi 👋 I'm Varsha</p> -->
+        <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-semibold py-4 underline underline-offset-8 decoration-2">🎵 About me</h3>
+        <p class="text-2xl lg:text-3xl 3xl:text-4xl">Hey 👋, </p>
+        <p class="text-2xl lg:text-3xl 3xl:text-4xl">I'm Varsha B Reddy. Currently, 23 years old~~</p> 
+        <p class="text-2xl lg:text-3xl 3xl:text-4xl"> I completed a three-month intermediate UX design course from imagin XP. During that time, I found out that I'm really passionate about UX research , wireframing and UI/UX design.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <DetailBlock text="📍 Lives in Bangalore, India" color='pink'/>
+            <DetailBlock text="🌏 Speaks: English, Kannada, Telugu, Hindi" color='pink'/>
+            <DetailBlock text="❣️ Loves: Food, dogs, coffee, backwater boating, snow, happy users" color='blue'/>
+            <DetailBlock text="💻 Apps I Love: Notion, Instagram" color='blue'/>
+        </div>
+        <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-semibold py-4">💣 My Hobbies</h3>
+        <hr>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <DetailBlock text="📷 Taking pictures" color='pink'/>
+            <DetailBlock text="💃🏻 Dancing bollywood" color='pink'/>
+            <DetailBlock text="🎻 Playing Vilion" color='blue'/>
+            <DetailBlock text="🏋️‍♀️ Workout" color='blue'/>
+            <DetailBlock text="💼 Travelling" color='pink'/>
+            <DetailBlock text="🎞️ Watching Movies" color='pink'/>
+        </div>
+        <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-semibold py-4">👀 Lifestyle sneak peek</h3>
+        <hr>
+        <div class="grid gap-6 grid-cols-2 md:grid-cols-3">
+            <Image imageSrc="assets/sneak-peek/image-1.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-2.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-3.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-4.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-5.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-6.jpg" />
+        </div>
+    </div>
+</div>

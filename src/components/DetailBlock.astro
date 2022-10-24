@@ -1,0 +1,20 @@
+---
+const { text, color } = Astro.props;
+var isPink = false;
+
+if (color == 'pink') {
+    isPink = true;
+}
+
+---
+
+<div>
+    { isPink ? 
+            <div class="w-full h-full p-8 flex items-center rounded-md shadow-sm bg-pinkBlock">
+                <p class="text-xl text-semibold">{text}</p>
+            </div> :
+            <div class="w-full h-full p-8 flex items-center rounded-md shadow-sm bg-blueBlock">
+                <p class="text-xl text-semibold">{text}</p>
+            </div>
+    }
+</div>
