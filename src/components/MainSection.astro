@@ -3,7 +3,7 @@
 ---
 
 <div class="introduction h-screen w-full">
-    <video autoplay preload='auto' muted loop class="blur-sm h-screen" id="myVideo">
+    <video autoplay preload='auto' muted loop playsinline class="blur-sm h-screen" id="myVideo">
         <source src="assets/temp-bg-video.mp4" type="video/mp4">
     </video>
     <div class="relative top-1/4 md:right-auto px-4 text-center md:text-end mx-12 space-y-2  md:space-y-4 py-8">
@@ -12,6 +12,10 @@
         <h3 class="text-3xl lg:text-4xl 3xl:text-5xl">& I'm an ally to my users.</h3>
     </div>
 </div>
+
+<script is:inline>
+    document.getElementById("myVideo").play();
+</script>
 
 <style>
     video {
