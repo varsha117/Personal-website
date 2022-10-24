@@ -1,5 +1,6 @@
 ---
 import DetailBlock from "./DetailBlock.astro";
+import Image from "./Image.astro";
 
 ---
 
@@ -18,6 +19,26 @@ import DetailBlock from "./DetailBlock.astro";
             <DetailBlock text="🌏 Speaks: English, Kannada, Telugu, Hindi" color='pink'/>
             <DetailBlock text="❣️ Loves: Food, dogs, coffee, backwater boating, snow, happy users" color='blue'/>
             <DetailBlock text="💻 Apps I Love: Notion, Instagram" color='blue'/>
+        </div>
+        <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-semibold py-4">💣 My Hobbies</h3>
+        <hr>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <DetailBlock text="📷 Taking pictures" color='pink'/>
+            <DetailBlock text="💃🏻 Dancing bollywood" color='pink'/>
+            <DetailBlock text="🎻 Playing Vilion" color='blue'/>
+            <DetailBlock text="🏋️‍♀️ Workout" color='blue'/>
+            <DetailBlock text="💼 Travelling" color='pink'/>
+            <DetailBlock text="🎞️ Watching Movies" color='pink'/>
+        </div>
+        <h3 class="text-3xl lg:text-4xl 3xl:text-5xl font-semibold py-4">👀 Lifestyle sneak peek</h3>
+        <hr>
+        <div class="grid gap-6 grid-cols-2 md:grid-cols-3">
+            <Image imageSrc="assets/sneak-peek/image-1.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-2.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-3.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-4.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-5.jpg" />
+            <Image imageSrc="assets/sneak-peek/image-6.jpg" />
         </div>
     </div>
 </div>
