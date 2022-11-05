@@ -10,7 +10,7 @@ if(url == "/") {
 <header>
     <nav class="flex flex-wrap items-center justify-between w-full py-4  px-4 md:px-24 text-lg bg-primary md:bg-secondary text-secondary md:text-primary">
         <div>
-            <a class="text-2xl md:text-3xl font-semibold md:font-bold pl-6" href="#">Varsha Reddy</a>
+            <a class="text-2xl md:text-3xl font-semibold md:font-bold pl-0" href="/">Varsha Reddy</a>
         </div>
         <div class="mobile-hamburger container rotate-180 mr-4 w-10 p-2 visible md:invisible" onclick="menuHandler()">
             <div id="first-line" class="bg-secondary h-[3px] w-10 my-2 transition-all ease-out delay-100"></div>
@@ -31,10 +31,13 @@ if(url == "/") {
                 
                 
                 <li onclick="menuHandler()">
-                    <a class="md:p-4 py-2 block" href="#">Portfolios</a>
+                    <a class="md:p-4 py-2 block" href="/#projects">Portfolio</a>
                 </li>
                 <li onclick="menuHandler()">
-                    <a class="md:p-4 py-2 block" href="#">Resume</a>
+                    <a class="md:p-4 py-2 block" href="assets/VarshaReddy_Resume.pdf" target="_blank">Resume</a>
+                </li>
+                <li onclick="menuHandler()">
+                    <a class="md:p-4 py-2 block" href="#footer">Contact</a>
                 </li>
             </ul>
         </div>
