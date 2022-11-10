@@ -1,5 +1,5 @@
 ---
-
+import "@fontsource/noto-serif"
 ---
 
 <div class="introduction h-screen w-full">
@@ -7,9 +7,9 @@
         <source src="assets/temp-bg-video.mp4" type="video/mp4">
     </video>
     <div class="relative top-[500px] md:top-1/4 md:right-auto px-4 text-center md:text-end mx-12 space-y-2 backdrop-blur-lg backdrop-brightness-50 md:backdrop-brightness-100 text-primary md:text-secondary md:backdrop-blur-none md:space-y-4 py-8">
-        <h2 class="text-3xl lg:text-4xl 3xl:text-5xl">Hello, My name is</h2>
-        <h1 class="text-4xl lg:text-5xl 3xl:text-6xl font-semibold">VARSHA B REDDY</h1>
-        <h3 class="text-3xl lg:text-4xl 3xl:text-5xl">& I'm an <a href="https://guidetoallyship.com/" class="underline underline-offset-8" target="_blank">ally</a> to my users.</h3>
+        <h2 class="text-3xl lg:text-3xl 3xl:text-5xl intro italic">Hello, My name is</h2>
+        <h1 class="text-4xl lg:text-4xl 3xl:text-6xl font-semibold italic">VARSHA B REDDY</h1>
+        <h3 class="text-3xl lg:text-3xl 3xl:text-5xl intro italic">& I'm an <a href="https://guidetoallyship.com/" class="underline underline-offset-8" target="_blank">ally</a> to my users.</h3>
     </div>
 </div>
 
@@ -18,6 +18,9 @@
 </script>
 
 <style>
+    .intro {
+        font-family: "Noto Serif", serif;
+    }
     video {
         width: 100%;
         height: 100%;
