@@ -8,6 +8,8 @@ I completed a three-month intermediate UX design course from imagin XP.
 During that time, I found out that I'm passionate about Product design.
 I would love seeing my designs come to life and help people in their daily lives.
 
+[Behance](https://www.behance.net/varshabred21d1) | [Instagram](https://www.instagram.com/varsha_0117) | [LinkedIn](https://www.linkedin.com/in/varshab17)
+
 ## 🚀 Project Structure
 
 Inside the project, you'll see the following folders:
