@@ -1,35 +1,45 @@
-# Welcome to [Astro](https://astro.build)
+# Welcome to [Varsha's Portfolio](https://varshabreddy.com)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+## A little about me
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+I'm Varsha B Reddy. 23 years old living in Bengaluru, Karnataka.
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+I completed a three-month intermediate UX design course from imagin XP.
+During that time, I found out that I'm passionate about Product design.
+I would love seeing my designs come to life and help people in their daily lives.
 
+[Behance](https://www.behance.net/varshabred21d1) | [Instagram](https://www.instagram.com/varsha_0117) | [LinkedIn](https://www.linkedin.com/in/varshab17)
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside the project, you'll see the following folders:
 
-```
+```bash
 /
 ├── public/
-│   └── favicon.svg
+│   └── assets/
+│       └── sneak-peek/
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
 │   ├── layouts/
-│   │   └── Layout.astro
 │   └── pages/
-│       └── index.astro
-└── package.json
 ```
+
+All the folders have different purposes and contain files required by the server to make the webpage work.
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
 Any static assets, like images, can be placed in the `public/` directory.
+
+## Tools/Frameworks Used
+
+- AstroJS
+- TailwindCSS
+- HTML
+- CSS
+- Netlify
 
 ## 🧞 Commands
 
@@ -43,7 +53,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`      | Preview your build locally, before deploying       |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
