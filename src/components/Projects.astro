@@ -1,14 +1,44 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
+const projects = [
+    {
+        "title": "Anita Dongre",
+        "description": "Driven by my desire to design for an Indian fashion brand, I created a minimalist website with functional features and rich content, offering a modern edge to Anita Dongre's Indian wear.",
+        "cardImage": "anita-dongre.png",
+        "replaceImg": "anita-dongre-replace.png",
+        "link": "https://www.behance.net/gallery/165490871/Anita-Dongre"
+    },
+    {
+        "title": "Freshly Picked",
+        "description": "The Freshly Picked app enables consumers to conveniently order fresh food from local farms while supporting local farmers by expanding their sales and providing easy access to locally grown produce.",
+        "cardImage": "freshly-picked.png",
+        "replaceImg": "freshly-picked-replace.png",
+        "link": "https://www.behance.net/gallery/152928267/Freshly-Picked-UIUX-Case-Study"
+    },
+    {
+        "title": "Mangolia Bakery",
+        "description": "This project aims to develop a secure and user-friendly platform that allows customers to place orders at the bakery without the need for in-person visits.",
+        "cardImage": "mangolia-bakery.jpeg",
+        "replaceImg": "mangolia-bakery-replace.jpeg",
+        "link": "https://www.behance.net/gallery/158630645/Indoor-Garden"
+    },
+]
 ---
 
 <div class="hire-me block bg-primary">
     <div class="md:px-4 text-base text-secondary mx-8 md:mx-24 space-y-2 py-24 h-full">
         <p class="text-3xl lg:text-5xl 3xl:text-6xl text-center">Work that I'm proud of</p>
-        <div class="flex flex-wrap space-y-16 w-full justify-evenly">
-            <!-- TODO: Use for loop to create projects dynamically -->
-            <ProjectCard title="Nest App" description="Nest app is a management app that can be used by both owners and residents." cardImage="temp-img.jpg" replaceImg="replace-temp-img.jpg" link="https://www.behance.net/gallery/152928267/Nest-App-UIUX-Case-Study"/>
-            <ProjectCard title="100 Days of Design" description="In Progress 🚧" cardImage="design-replace.jpg" replaceImg="Design-Cover.png" link="https://hospitable-jumper-283.notion.site/100-days-of-Design-Challenge-3b4e15c41a8c4ae5aae64dd4b570f4bb"/>
+        <div class="flex flex-wrap w-full justify-evenly">
+            {projects.map((project) => (
+                <ProjectCard 
+                    title={project.title} 
+                    description={project.description} 
+                    cardImage={project.cardImage} 
+                    replaceImg={project.replaceImg} 
+                    link={project.link}
+                />
+            ))}
+            
         </div>
     </div>
 </div>
